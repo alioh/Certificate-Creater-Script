@@ -1,4 +1,6 @@
-# Certificate-Creater-Script
+# Certificate Creator
+
+Automatically create certificates for your event attendees.
 
 ## How it work?
 
