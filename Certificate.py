@@ -1,5 +1,3 @@
-# reference: https://haptik.ai/tech/putting-text-on-image-using-python/
-
 from PIL import Image, ImageDraw, ImageFont
 import arabic_reshaper
 from bidi.algorithm import get_display
@@ -23,7 +21,6 @@ def createCertificate(workshop, attendees_list):
         #   Size of text
         w, h = draw.textsize(i, font)
 
-        #   https://gist.github.com/amrza/04658c71ac02d82580855f89b9b3dff4
         reshaped_attendees_name = arabic_reshaper.reshape(i)
         text_attendees_name = get_display(reshaped_attendees_name)
         draw.text((((x/2)-(w/2.5)), ((y - h) / 2)-310), text_attendees_name, fill=color, font=font)
